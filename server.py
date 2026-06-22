@@ -2,9 +2,9 @@
 """Локальный сервер: раздаёт сайт и сохраняет портфолио в файлы."""
 
 import base64
-import cgi
 import json
 import os
+import re
 import uuid
 from datetime import datetime, timezone
 from http.server import HTTPServer, SimpleHTTPRequestHandler
@@ -24,6 +24,38 @@ UPLOAD_DIRS = {
 }
 RECEIPT_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".pdf"}
 REVIEW_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
+
+
+def parse_multipart_form(body: bytes, content_type: str) -> tuple[dict[str, str], dict[str, tuple[str, bytes]]]:
+    match = re.search(r"boundary=(?P<b>[^;]+)", content_type)
+    if not match:
+        raise ValueError("Некорректный multipart")
+    boundary = match.group("b").strip().strip('"').encode()
+    fields: dict[str, str] = {}
+    files: dict[str, tuple[str, bytes]] = {}
+    for chunk in body.split(b"--" + boundary):
+        chunk = chunk.strip(b"\r\n")
+        if not chunk or chunk == b"--":
+            continue
+        header_end = chunk.find(b"\r\n\r\n")
+        if header_end < 0:
+            continue
+        headers = chunk[:header_end].decode("utf-8", errors="replace")
+        data = chunk[header_end + 4 :]
+        if data.endswith(b"\r\n"):
+            data = data[:-2]
+        name_match = re.search(r'name="([^"]+)"', headers)
+        if not name_match:
+            continue
+        name = name_match.group(1)
+        filename_match = re.search(r'filename="([^"]*)"', headers)
+        if filename_match:
+            filename = filename_match.group(1)
+            if filename:
+                files[name] = (filename, data)
+        else:
+            fields[name] = data.decode("utf-8", errors="replace")
+    return fields, files
 
 
 def save_bytes(data: bytes, folder: str, ext: str) -> str:
@@ -382,17 +414,19 @@ class Handler(SimpleHTTPRequestHandler):
 
     def handle_upload(self):
         try:
-            form = cgi.FieldStorage(
-                fp=self.rfile,
-                headers=self.headers,
-                environ={"REQUEST_METHOD": "POST", "CONTENT_TYPE": self.headers.get("Content-Type", "")},
-            )
-            fileitem = form["file"]
-            if not fileitem.filename:
+            length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(length)
+            content_type = self.headers.get("Content-Type", "")
+            fields, files = parse_multipart_form(body, content_type)
+            if "file" not in files:
                 self.send_json(400, {"error": "Файл не выбран"})
                 return
-            ext = Path(fileitem.filename).suffix.lower()
-            folder = form.getvalue("folder", "portfolio")
+            filename, filedata = files["file"]
+            if not filename:
+                self.send_json(400, {"error": "Файл не выбран"})
+                return
+            ext = Path(filename).suffix.lower()
+            folder = fields.get("folder", "portfolio")
             if folder not in UPLOAD_DIRS:
                 folder = "portfolio"
             if folder == "receipts":
@@ -407,7 +441,7 @@ class Handler(SimpleHTTPRequestHandler):
                 self.send_json(400, {"error": "Только JPG / JPEG"})
                 return
             save_ext = ext if ext != ".jpeg" else ".jpg"
-            rel = save_bytes(fileitem.file.read(), folder, save_ext)
+            rel = save_bytes(filedata, folder, save_ext)
             self.send_json(200, {"path": rel})
         except Exception as exc:
             self.send_json(500, {"error": str(exc)})
