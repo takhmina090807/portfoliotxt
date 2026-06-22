@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Забронировать съёмку</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-booking">
+  <header class="header scrolled" id="top">
+    <div class="header-inner">
+      <a class="moodboard-link" href="moodboards.html">идеи съёмок</a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html#home">Главная</a>
+        <a href="index.html#portfolio">Портфолио</a>
+        <span id="services-nav-slot"><a href="index.html#services">Услуги</a></span>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="book.html" class="active">Запись</a>
+      </nav>
+      <a class="admin-link" href="admin/" title="Редактировать">✎</a>
+    </div>
+  </header>
+
+  <main class="booking-page section">
+    <div class="booking-intro">
+      <h1>Забронировать съёмку</h1>
+      <p id="booking-subtitle">Выберите услугу, дату и время. Предоплата 20% фиксирует ваш слот.</p>
+    </div>
+
+    <div class="booking-steps" id="booking-steps">
+      <span class="booking-step active" data-step="1">1. Съёмка</span>
+      <span class="booking-step" data-step="2">2. Дата</span>
+      <span class="booking-step" data-step="3">3. Контакты</span>
+      <span class="booking-step" data-step="4">4. Оплата</span>
+    </div>
+
+    <form class="booking-form" id="booking-form">
+      <section class="booking-panel active" data-panel="1">
+        <h2>Какую съёмку хотите?</h2>
+        <div class="field">
+          <label for="book-service">Услуга</label>
+          <select id="book-service" required></select>
+        </div>
+        <div class="field">
+          <label for="book-idea">Идея съёмки (необязательно)</label>
+          <select id="book-idea">
+            <option value="">— Без конкретной идеи —</option>
+          </select>
+        </div>
+        <p class="field-hint" id="book-service-price"></p>
+        <button type="button" class="btn-outline booking-next" data-next="2">Далее →</button>
+      </section>
+
+      <section class="booking-panel" data-panel="2">
+        <h2>Выберите дату и время</h2>
+        <div class="booking-calendar-wrap">
+          <div class="booking-calendar-nav">
+            <button type="button" class="cal-nav-btn" id="cal-prev" aria-label="Предыдущий месяц">‹</button>
+            <span id="cal-month-label"></span>
+            <button type="button" class="cal-nav-btn" id="cal-next" aria-label="Следующий месяц">›</button>
+          </div>
+          <div class="booking-calendar" id="booking-calendar"></div>
+        </div>
+        <div class="field hidden" id="time-field">
+          <label>Время</label>
+          <div class="time-slots" id="time-slots"></div>
+        </div>
+        <p class="booking-empty hidden" id="calendar-empty">Пока нет свободных дат — напишите мне в WhatsApp.</p>
+        <div class="booking-nav-row">
+          <button type="button" class="btn-outline booking-back" data-back="1">← Назад</button>
+          <button type="button" class="btn-outline booking-next" data-next="3" disabled id="step2-next">Далее →</button>
+        </div>
+      </section>
+
+      <section class="booking-panel" data-panel="3">
+        <h2>Ваши данные</h2>
+        <div class="field">
+          <label for="book-name">Имя</label>
+          <input id="book-name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="book-phone">Телефон / WhatsApp</label>
+          <input id="book-phone" type="tel" required autocomplete="tel" placeholder="+7 ...">
+        </div>
+        <div class="field">
+          <label for="book-email">Email (необязательно)</label>
+          <input id="book-email" type="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="book-notes">Пожелания</label>
+          <textarea id="book-notes" rows="3" placeholder="Локация, образ, особые пожелания…"></textarea>
+        </div>
+        <div class="booking-nav-row">
+          <button type="button" class="btn-outline booking-back" data-back="2">← Назад</button>
+          <button type="button" class="btn-outline booking-next" data-next="4">Далее →</button>
+        </div>
+      </section>
+
+      <section class="booking-panel" data-panel="4">
+        <h2>Предоплата 20%</h2>
+        <div class="booking-summary" id="booking-summary"></div>
+        <div class="bank-card" id="bank-card"></div>
+        <div class="field">
+          <label for="book-receipt">Чек об оплате</label>
+          <label class="receipt-upload-btn">
+            <span id="receipt-upload-label">Выбрать файл</span>
+            <input type="file" id="book-receipt" accept=".jpg,.jpeg,.png,.webp,.pdf,image/jpeg,image/png,image/webp,application/pdf" required>
+          </label>
+          <p class="field-hint">Скриншот или PDF перевода с Kaspi / банка</p>
+          <div class="receipt-preview hidden" id="receipt-preview">
+            <img id="receipt-preview-img" alt="" class="hidden">
+            <span id="receipt-preview-name"></span>
+          </div>
+        </div>
+        <label class="checkbox-label booking-paid-label">
+          <input type="checkbox" id="book-paid" required>
+          Я перевела предоплату на указанный счёт
+        </label>
+        <div class="booking-nav-row">
+          <button type="button" class="btn-outline booking-back" data-back="3">← Назад</button>
+          <button type="submit" class="btn-outline booking-submit">Подтвердить и написать в WhatsApp</button>
+        </div>
+      </section>
+    </form>
+
+    <div class="booking-success hidden" id="booking-success">
+      <h2>Заявка отправлена ✨</h2>
+      <p>Слот зарезервирован. Напишите мне в WhatsApp — откроется готовое сообщение с деталями.</p>
+      <a class="btn-whatsapp" id="success-whatsapp" href="#" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <a class="btn-outline" href="index.html">На главную</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p id="footer-text"></p>
+  </footer>
+
+  <script type="module" src="js/book.js"></script>
+</body>
+</html>

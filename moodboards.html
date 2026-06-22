@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мудборды — идеи для фотосъёмок">
+  <title>Мудборды</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-moodboards">
+  <header class="header scrolled">
+    <div class="header-inner">
+      <a class="moodboard-link active" href="moodboards.html" title="Идеи съёмок">идеи съёмок</a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html#home">Главная</a>
+        <a href="index.html#portfolio">Портфолио</a>
+        <span id="services-nav-slot"><a href="index.html#services">Услуги</a></span>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="index.html#contact">Контакты</a>
+        <a href="book.html">Запись</a>
+      </nav>
+      <a class="admin-link" href="admin/" title="Редактировать">✎</a>
+    </div>
+  </header>
+
+  <main class="moodboards-page">
+    <div class="moodboards-intro section">
+      <h1 id="moodboards-heading">Идеи съёмок</h1>
+      <p id="moodboards-subtitle">Идеи и настроение для будущих съёмок — выберите стиль, который вам ближе.</p>
+      <a class="moodboards-back hidden" id="moodboards-back" href="moodboards.html">← Все идеи</a>
+    </div>
+    <div class="moodboards-grid section" id="moodboards-grid"></div>
+  </main>
+
+  <dialog class="lightbox moodboard-modal" id="moodboard-modal">
+    <button class="lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+    <div class="moodboard-modal-content" id="moodboard-modal-content"></div>
+  </dialog>
+
+  <script type="module" src="js/moodboards.js"></script>
+</body>
+</html>

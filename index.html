@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио фотографа">
+  <title>Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="header-inner">
+      <a class="moodboard-link" href="moodboards.html" title="Идеи съёмок" aria-label="Идеи съёмок">идеи съёмок</a>
+      <nav class="nav" id="main-nav">
+        <a href="#home">Главная</a>
+        <a href="#portfolio">Портфолио</a>
+        <span id="services-nav-slot"><a href="#services">Услуги</a></span>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+        <a href="book.html">Запись</a>
+      </nav>
+      <a class="admin-link" href="admin/" title="Редактировать сайт">✎</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg" id="hero-bg" style="background-image: url('images/hero-film.png')"></div>
+    <div class="hero-content">
+      <h1 id="brand-name">Portfolio</h1>
+      <a class="scroll-hint" href="#about" aria-label="Вниз">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="about-grid">
+      <div class="about-photo">
+        <img id="about-image" src="" alt="">
+      </div>
+      <div class="about-text">
+        <h2 id="about-title"></h2>
+        <div id="about-paragraphs"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio section" id="portfolio">
+    <h2 class="section-title" id="portfolio-title">Портфолио</h2>
+    <div class="portfolio-grid" id="portfolio-grid"></div>
+    <button class="btn-outline" id="portfolio-more" type="button">Смотреть ещё</button>
+  </section>
+
+  <section class="services section" id="services">
+    <h2 class="section-title" id="services-title">Услуги</h2>
+    <div class="services-grid" id="services-grid"></div>
+  </section>
+
+  <section class="reviews section" id="reviews">
+    <h2 class="section-title" id="reviews-title">Отзывы</h2>
+    <div class="reviews-grid" id="reviews-grid"></div>
+  </section>
+
+  <section class="cta section" id="contact">
+    <h2 class="section-title" id="cta-title"></h2>
+    <p class="cta-text" id="cta-text"></p>
+    <a class="btn-outline" id="cta-button" href="#">Забронировать</a>
+    <a class="cta-phone" id="cta-phone" href="#"></a>
+    <div class="contact-links" id="contact-links"></div>
+  </section>
+
+  <footer class="footer">
+    <p id="footer-text"></p>
+  </footer>
+
+  <div class="float-actions">
+    <button class="float-btn" id="share-btn" type="button" title="Поделиться" aria-label="Поделиться">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12v7a1 1 0 001 1h14a1 1 0 001-1v-7M16 6l-4-4-4 4M12 2v14"/></svg>
+    </button>
+    <a class="float-btn" href="#top" title="Наверх" aria-label="Наверх">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </div>
+
+  <dialog class="lightbox series-modal" id="gallery-lightbox">
+    <button class="lightbox-close" type="button" aria-label="Закрыть">&times;</button>
+    <div class="series-modal-content">
+      <h2 id="series-modal-title"></h2>
+      <p class="series-modal-count" id="series-modal-count"></p>
+      <div class="series-modal-gallery" id="series-modal-gallery"></div>
+    </div>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

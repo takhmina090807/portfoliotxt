@@ -1,0 +1,361 @@
+{
+  "adminPassword": "080707",
+  "site": {
+    "brand": "Takhmina.txt",
+    "metaTitle": "Фотограф — портфолио",
+    "metaDescription": "Портфолио фотографа. Портретная и lifestyle съёмка.",
+    "heroImage": "images/hero-film.png",
+    "aboutImage": "images/about.jpg",
+    "aboutTitle": "Приветствую!",
+    "aboutParagraphs": [
+      "Меня зовут Вансинвей Тахмина 🤍",
+      "Мне 18 лет, я родом из Алматы 🇰🇿 и учусь по специальности Software Design в Канадском университете в Дубае.",
+      "Но помимо учёбы в моей жизни есть ещё одна большая любовь — фотография. Я люблю камеру, люблю людей и искренне верю, что самые ценные кадры — это не про идеальность, а про настоящие эмоции, взгляды и моменты, к которым хочется возвращаться снова и снова.",
+      "Для меня каждая съёмка — это не просто фотографии. Это возможность помочь человеку увидеть себя красивым, сохранить важные этапы жизни и создать воспоминания, которые останутся с ним спустя годы.",
+      "Я стремлюсь создавать живые, атмосферные и искренние кадры, в которых каждый сможет узнать себя настоящего. Мне важно, чтобы во время съёмки человек чувствовал себя комфортно и свободно, а результат вызывал улыбку даже спустя много лет.",
+      "Этот сайт-портфолио я создала, чтобы поделиться своим взглядом на фотографию, показать свой стиль и находить близких по духу людей. Для меня это первый шаг на пути к тому, чтобы превратить любимое дело в профессию.",
+      "Спасибо, что заглянули сюда. Буду рада стать частью ваших особенных историй ✨📸"
+    ],
+    "portfolioTitle": "Портфолио",
+    "portfolioVisibleCount": 6,
+    "ctaTitle": "Заказать фотосъемку",
+    "ctaText": "Чтобы забронировать съемку, нажмите на кнопку ниже или напишите мне в любом удобном для вас мессенджере по номеру:",
+    "ctaButton": "Забронировать",
+    "phone": "+7(747)5797718",
+    "phoneLink": "https://wa.me/971585377910",
+    "location": "Алматы-Дубай"
+  },
+  "contacts": {
+    "title": "Контакты",
+    "items": []
+  },
+  "services": {
+    "title": "Услуги",
+    "items": [
+      {
+        "id": "mqo3m4d2h663c",
+        "title": "Уличная съмка ",
+        "description": "Уличная фотосъёмка 📸\n\nСъёмка в городском стиле, где главным элементом становится атмосфера улиц, архитектура и живые эмоции. Такие кадры передают настроение города, естественность момента и индивидуальность человека.\n\n📍 Локация: городские улицы\n",
+        "price": "7000 тг",
+        "priceAmount": 6995,
+        "currency": "KZT"
+      },
+      {
+        "title": "Интерьерная съёмка",
+        "description": "Съёмка в уютных и стильных пространствах, наполненных характером и атмосферой. Тёплый свет, красивые детали и естественные эмоции помогают создавать кадры, к которым хочется возвращаться снова и снова.\n📍 Локация: кафе, библиотеки, книжные и винтажные магазины",
+        "price": "6000 тг",
+        "priceAmount": 6000,
+        "currency": "KZT"
+      },
+      {
+        "title": "Парная фотосъёмка ",
+        "description": "Съёмка, которая помогает сохранить искренние чувства, эмоции и особенную связь между двумя людьми. Живые моменты, нежные взгляды и естественные прикосновения превращаются в кадры, наполненные теплом, любовью и атмосферой вашей истории.\n\n📍 Локация: городские улицы, парки, кафе, интерьерные пространства или выбранная вами локация\n",
+        "price": "8000тг",
+        "priceAmount": 80000,
+        "currency": "KZT"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Отзывы",
+    "items": [
+      {
+        "name": "Акнур ",
+        "text": "Тахминааа,спасибо большое,очень обалденные фотки!!",
+        "date": "2026",
+        "image": ""
+      },
+      {
+        "name": "Акмарал ",
+        "text": "Какие шикарные кадры!!",
+        "date": "2026",
+        "image": ""
+      }
+    ]
+  },
+  "portfolio": [
+    {
+      "id": "mqotyvtt55uxe",
+      "title": "Акмарал ",
+      "cover": "images/portfolio/abba0f2421a54baabff85b5d17de679a.jpg",
+      "images": [
+        "images/portfolio/83eff47daedc4ad891af68e60b61bed3.jpg",
+        "images/portfolio/460992e03e9d405eabbc7b8430b240bf.jpg",
+        "images/portfolio/56f223dae01a445ca536a9a07c458a1f.jpg",
+        "images/portfolio/83dd362c92064edea475cc6b0ef48ba2.jpg",
+        "images/portfolio/12f9c9b8b333491d93fa8b821b3cd151.jpg",
+        "images/portfolio/b473fe33820741aa8a9dfe8289ba49cd.jpg",
+        "images/portfolio/b59e7e98c81e4ca395cc0d34542ec2ad.jpg",
+        "images/portfolio/5355a298b7a14511afbf1a74cc85aff5.jpg",
+        "images/portfolio/fed49c7f62e44ac4bf17b20aca861ed1.jpg",
+        "images/portfolio/3b9a70c098f0446083850691a0c45090.jpg",
+        "images/portfolio/caf84d0f2d9642f5b32ec6a04034893c.jpg",
+        "images/portfolio/99bcb8b6265f4f7d9f555100549cfe15.jpg",
+        "images/portfolio/c342e4fa2a074264981834a8f2e9d99c.jpg"
+      ]
+    },
+    {
+      "id": "mqoogebt973xm",
+      "title": "Акнур",
+      "cover": "images/portfolio/72c7457906624c21a62b7f9b2846cad4.jpg",
+      "images": [
+        "images/portfolio/72c7457906624c21a62b7f9b2846cad4.jpg",
+        "images/portfolio/0ea98580fddb4fbfa6a84fec0e36fcdc.jpg",
+        "images/portfolio/0a97675511754089ba60dc413ff3ea9b.jpg",
+        "images/portfolio/7ad6b8d0324e4591900824cd4eff1cba.jpg",
+        "images/portfolio/52839ab4feca4ac7b079612ee9f7d1fd.jpg",
+        "images/portfolio/8384af2b3c9a46499c4991537af90ce2.jpg",
+        "images/portfolio/a56d349d4138404893de8a75f56431a4.jpg",
+        "images/portfolio/badd4604a6fa4a4fbfd6322b03cbd229.jpg",
+        "images/portfolio/997289569a514cfc8ecbfc830ca588c7.jpg"
+      ]
+    },
+    {
+      "id": "mqonwh7uz9myv",
+      "title": "Малика ",
+      "cover": "images/portfolio/774dcd97a53d4b24a75d14ff038c961d.jpg",
+      "images": [
+        "images/portfolio/c851ff0791614b5e9ba09b40d8c28f19.jpg",
+        "images/portfolio/f13dbcc6d17a4726b7bbf9753d4b7255.jpg",
+        "images/portfolio/f3dd27b02f2e4180ab2e6d0e1f7abe60.jpg",
+        "images/portfolio/fcfb8273e14c44228f44d099f2f8b631.jpg",
+        "images/portfolio/c3f1294b92994156b3ada25d8d9ac0a1.jpg",
+        "images/portfolio/a3dff8d097914f3e9a7234c7a702693f.jpg",
+        "images/portfolio/fc5ae9ec0ff44116837be7c47276a36d.jpg",
+        "images/portfolio/faa0d3fd792c467ab472d25ddbe603f3.jpg"
+      ]
+    },
+    {
+      "id": "test",
+      "title": "Гульнур",
+      "cover": "images/portfolio/57b0fa669fe141a0a365fa8f6969f215.jpg",
+      "images": [
+        "images/portfolio/57b0fa669fe141a0a365fa8f6969f215.jpg",
+        "images/portfolio/963ec948e7594ee98be2de59d66f7071.jpg",
+        "images/portfolio/ce117b2f78774b90831164b4cfc0e858.jpg",
+        "images/portfolio/da4d19ba73a84c828604d983843ab198.jpg",
+        "images/portfolio/2a6e40f1f6934a9f8406af2c465b1906.jpg",
+        "images/portfolio/2b2dfdec01f940028368011084961e4d.jpg",
+        "images/portfolio/d758133c072b48fca110a9d5b3594503.jpg",
+        "images/portfolio/73febf8c5f8e409385be0bfd4f048ca3.jpg",
+        "images/portfolio/7fcfc7df194e4ec1ab88480c1348f065.jpg"
+      ]
+    }
+  ],
+  "moodboards": [
+    {
+      "id": "mqou4be4d7epx",
+      "title": "Парная фотосъёмка ",
+      "description": "Съёмка, которая помогает сохранить искренние чувства, эмоции и особенную связь между двумя людьми. Живые моменты, нежные взгляды и естественные прикосновения превращаются в кадры, наполненные теплом, любовью и атмосферой вашей истории.\n📍 Локация: городские улицы, парки, кафе, интерьерные пространства или выбранная вами локация",
+      "tags": [
+        "#ПарнаяСъёмка #LoveStory #CouplePhotography #ПарнаяФотосессия #LoveStoryPhotography"
+      ],
+      "serviceIds": [
+        "mqo3m4d2h663c",
+        "service-1",
+        "service-2"
+      ],
+      "cover": "images/moodboards/c68930220ab34e7badb88697074fcfef.jpg",
+      "pinterestUrl": "",
+      "images": [
+        "images/moodboards/c68930220ab34e7badb88697074fcfef.jpg"
+      ]
+    },
+    {
+      "id": "mqot0x6s3ju73",
+      "title": "Интерьерная фотосъёмка ",
+      "description": "Стильная съёмка в атмосферных пространствах с акцентом на настроение, детали и эстетику кадра. Уютные интерьеры, винтажные элементы, мягкий свет и естественные эмоции создают фотографии с особым характером и кинематографичным настроением.\n\n📍 Локация: фотостудии,шоурумы и другие интерьерные пространства\n",
+      "tags": [
+        "#ИнтерьернаяСъёмка #InteriorPhotography #LifestylePhotography"
+      ],
+      "serviceIds": [
+        "service-1"
+      ],
+      "cover": "images/moodboards/30eebe902810455e9b4d674e5e3881a1.jpg",
+      "pinterestUrl": "",
+      "images": [
+        "images/moodboards/30eebe902810455e9b4d674e5e3881a1.jpg"
+      ]
+    },
+    {
+      "id": "mqoo5drq1bjvi",
+      "title": "Библиотека",
+      "description": "Фотосъёмка в библиотеке — это сочетание эстетики знаний, спокойной атмосферы и винтажного настроения. Высокие стеллажи с книгами, мягкий свет и уютные уголки создают особенную атмосферу для искренних и стильных кадров. Такая съёмка идеально подойдёт для творческих портретов, личного бренда и атмосферных историй.\n",
+      "tags": [],
+      "serviceIds": [
+        "service-1"
+      ],
+      "cover": "images/moodboards/bdff4f24c86d4cce8fb32a260a668ff5.jpg",
+      "pinterestUrl": "",
+      "images": [
+        "images/moodboards/bdff4f24c86d4cce8fb32a260a668ff5.jpg"
+      ]
+    },
+    {
+      "id": "mqo6h0kgol6ah",
+      "title": "Street & Café ☕📸",
+      "description": "Сочетание городской атмосферы и уюта любимого кафе. Прогулка по улицам города, живые эмоции, естественный свет и стильные кадры, наполненные настроением повседневной красоты.\n\n📍 Локация: улицы города и кафе\n",
+      "tags": [
+        "#СъёмкаВКафе #CafePhotography #StreetStyle"
+      ],
+      "serviceIds": [
+        "mqo3m4d2h663c"
+      ],
+      "cover": "images/moodboards/63de02bb5e3d4d799c2cc77e6b5dc0f5.jpg",
+      "pinterestUrl": "",
+      "images": [
+        "images/moodboards/63de02bb5e3d4d799c2cc77e6b5dc0f5.jpg"
+      ]
+    },
+    {
+      "id": "mqo69mkkavmh5",
+      "title": "Уличная фотосессия",
+      "description": "Городские истории 🖤\n\nУличная фотосъёмка, вдохновлённая ритмом города. Архитектура, свет, движение и искренние эмоции создают атмосферные кадры с особым характером и настроением.\n\n📍 Локация: улицы города\n",
+      "tags": [
+        "#УличнаяФотосессия #StreetPhotography #ГородскаяСъёмка"
+      ],
+      "serviceIds": [
+        "mqo3m4d2h663c"
+      ],
+      "cover": "images/moodboards/8342fdfcf0e949b5b6834f5339d9926c.jpg",
+      "pinterestUrl": "",
+      "images": [
+        "images/moodboards/8342fdfcf0e949b5b6834f5339d9926c.jpg"
+      ]
+    },
+    {
+      "id": "mqo2yos2j00rv",
+      "title": "Фотосъёмка в стиле лесной сказки",
+      "description": "Фотосъёмка в стиле лесной сказки, передающая атмосферу природы, лёгкости и уюта. Тёплый естественный свет, зелень парка и живые эмоции создают кадры, наполненные гармонией и волшебством.\n\n📍 Локация: парк",
+      "tags": [
+        "#Парк",
+        "#природа",
+        "#нежность"
+      ],
+      "serviceIds": [
+        "mqo3m4d2h663c"
+      ],
+      "cover": "images/portfolio/e8a6664e35e14aa7b0df11ce2adfec09.jpg",
+      "images": [
+        "images/portfolio/e8a6664e35e14aa7b0df11ce2adfec09.jpg"
+      ],
+      "pinterestUrl": "https://pin.it/3dQl5kRcD"
+    }
+  ],
+  "booking": {
+    "prepaymentPercent": 20,
+    "bank": {
+      "holder": "Вансинвей Тахмина",
+      "bankName": "Kaspi Bank",
+      "account": "4400430342928535",
+      "note": "В комментарии к переводу укажите: предоплата за съёмку и ваше имя"
+    },
+    "defaultSlots": [
+      "12:00",
+      "14:00",
+      "16:00",
+      "18:00"
+    ],
+    "availableDates": [
+      {
+        "date": "2026-06-23",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-06-24",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-14",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-18",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-19",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-21",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-22",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-23",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-24",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      },
+      {
+        "date": "2026-07-25",
+        "slots": [
+          "12:00",
+          "14:00",
+          "16:00",
+          "18:00"
+        ]
+      }
+    ]
+  }
+}

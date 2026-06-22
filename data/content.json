@@ -1,0 +1,186 @@
+{
+  "adminPassword": "080707",
+  "site": {
+    "brand": "Takhmina.txt",
+    "metaTitle": "Фотограф — портфолио",
+    "metaDescription": "Портфолио фотографа. Портретная и lifestyle съёмка.",
+    "heroImage": "images/hero-film.png",
+    "aboutImage": "images/about.jpg",
+    "aboutTitle": "Приветствую!",
+    "aboutParagraphs": [
+      "Меня зовут Вансинвей Тахмина 🤍",
+      "Мне 18 лет, я родом из Алматы 🇰🇿 и учусь по специальности Software Design в Канадском университете в Дубае.",
+      "Но помимо учёбы в моей жизни есть ещё одна большая любовь — фотография. Я люблю камеру, люблю людей и искренне верю, что самые ценные кадры — это не про идеальность, а про настоящие эмоции, взгляды и моменты, к которым хочется возвращаться снова и снова.",
+      "Для меня каждая съёмка — это не просто фотографии. Это возможность помочь человеку увидеть себя красивым, сохранить важные этапы жизни и создать воспоминания, которые останутся с ним спустя годы.",
+      "Я стремлюсь создавать живые, атмосферные и искренние кадры, в которых каждый сможет узнать себя настоящего. Мне важно, чтобы во время съёмки человек чувствовал себя комфортно и свободно, а результат вызывал улыбку даже спустя много лет.",
+      "Этот сайт-портфолио я создала, чтобы поделиться своим взглядом на фотографию, показать свой стиль и находить близких по духу людей. Для меня это первый шаг на пути к тому, чтобы превратить любимое дело в профессию.",
+      "Спасибо, что заглянули сюда. Буду рада стать частью ваших особенных историй ✨📸"
+    ],
+    "portfolioTitle": "Портфолио",
+    "portfolioVisibleCount": 6,
+    "ctaTitle": "Заказать фотосъемку",
+    "ctaText": "Чтобы забронировать съемку, нажмите на кнопку ниже или напишите мне в любом удобном для вас мессенджере по номеру:",
+    "ctaButton": "Забронировать",
+    "phone": "+84383240851",
+    "phoneLink": "https://wa.me/84383240851",
+    "location": "Алматы-Дубай"
+  },
+  "contacts": {
+    "title": "Контакты",
+    "items": [
+      { "label": "WhatsApp", "url": "https://wa.me/84383240851" },
+      { "label": "Telegram", "url": "https://t.me/your_username" },
+      { "label": "Instagram", "url": "https://instagram.com/your_username" }
+    ]
+  },
+  "services": {
+    "title": "Услуги",
+    "items": [
+      {
+        "id": "portrait",
+        "title": "Портретная съёмка",
+        "description": "Индивидуальная или парная съёмка на локации или в студии. 1–2 часа, 30+ обработанных кадров.",
+        "price": "от 80$",
+        "priceAmount": 80,
+        "currency": "KZT"
+      },
+      {
+        "id": "love-story",
+        "title": "Love story",
+        "description": "Романтичная съёмка для пар: прогулка, эмоции, естественный свет.",
+        "price": "от 100$",
+        "priceAmount": 100,
+        "currency": "KZT"
+      },
+      {
+        "id": "brand",
+        "title": "Контент для бренда",
+        "description": "Фото для соцсетей, каталога или личного бренда.",
+        "price": "по запросу",
+        "priceAmount": null,
+        "currency": "KZT"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "Отзывы",
+    "items": [
+      {
+        "name": "Анастасия",
+        "text": "Очень тёплая атмосфера на съёмке! Фотографии получились живые и красивые — именно то, что хотела.",
+        "date": "2025"
+      },
+      {
+        "name": "Виктория",
+        "text": "Катя помогла расслабиться и поймала лучшие моменты. Рекомендую всем!",
+        "date": "2024"
+      }
+    ]
+  },
+  "portfolio": [
+    {
+      "id": "victoria",
+      "title": "Victoria",
+      "cover": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80",
+        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200&q=80",
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=80"
+      ]
+    },
+    {
+      "id": "viktoria",
+      "title": "Viktoria",
+      "cover": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200&q=80",
+        "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=1200&q=80"
+      ]
+    },
+    {
+      "id": "anastasia",
+      "title": "Anastasia",
+      "cover": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=80",
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&q=80",
+        "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=1200&q=80"
+      ]
+    },
+    {
+      "id": "beach",
+      "title": "Beach mood",
+      "cover": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1200&q=80",
+        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80"
+      ]
+    }
+  ],
+  "moodboards": [
+    {
+      "id": "beach-light",
+      "title": "Светлая пляжная съёмка",
+      "description": "Натуральные позы, белые ткани, море и скалы. Идеально для расслабленного настроения.",
+      "tags": ["пляж", "естественный свет", "бохо"],
+      "serviceIds": ["love-story"],
+      "pinterestUrl": "",
+      "cover": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80",
+        "https://images.unsplash.com/photo-1519046904210-386856b57fcc?w=1200&q=80",
+        "https://images.unsplash.com/photo-1473496163034-210fa8d39e51?w=1200&q=80"
+      ]
+    },
+    {
+      "id": "urban",
+      "title": "Городской стиль",
+      "description": "Улицы, кафе, архитектура. Динамичные кадры и модные образы.",
+      "tags": ["город", "street style", "вечер"],
+      "serviceIds": ["brand"],
+      "pinterestUrl": "",
+      "cover": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1200&q=80",
+        "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&q=80"
+      ]
+    },
+    {
+      "id": "golden-hour",
+      "title": "Золотой час",
+      "description": "Тёплый закатный свет, мягкие тени и романтичное настроение.",
+      "tags": ["закат", "романтика", "портрет"],
+      "serviceIds": ["portrait", "love-story"],
+      "pinterestUrl": "",
+      "cover": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1200&q=80",
+        "https://images.unsplash.com/photo-1522673605300-11d0f0b2b0b0?w=1200&q=80"
+      ]
+    },
+    {
+      "id": "minimal",
+      "title": "Минимализм в студии",
+      "description": "Чистый фон, акцент на лице и эмоциях. Подходит для аватарок и бренда.",
+      "tags": ["студия", "минимализм", "портрет"],
+      "serviceIds": ["portrait", "brand"],
+      "pinterestUrl": "",
+      "cover": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=80",
+        "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=1200&q=80"
+      ]
+    }
+  ],
+  "booking": {
+    "prepaymentPercent": 20,
+    "bank": {
+      "holder": "Вансинвей Тахмина",
+      "bankName": "Kaspi Bank",
+      "account": "Укажите номер счёта в админке",
+      "note": "В комментарии к переводу укажите: предоплата за съёмку и ваше имя"
+    },
+    "defaultSlots": ["10:00", "12:00", "14:00", "16:00", "18:00"],
+    "availableDates": []
+  }
+}
